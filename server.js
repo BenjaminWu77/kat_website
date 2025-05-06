@@ -5,8 +5,8 @@ const port = 3000;
 
 // Serve static files from the root directory
 app.use(express.static(path.join(__dirname, 'html')));
-app.use('/css', express.static(path.join(__dirname)));
-app.use('/js', express.static(path.join(__dirname)));
+app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/js', express.static(path.join(__dirname, 'js')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Parse JSON bodies
